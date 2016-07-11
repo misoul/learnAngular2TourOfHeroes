@@ -17,11 +17,11 @@ export class HeroService {
                .catch(this.handleError);
   }
 
-  getHeroesSlowly() {
-    return new Promise<Hero[]>(resolve =>
-      setTimeout(() => resolve(HEROES), 1000) // 2 seconds
-    );
-  }
+  // getHeroesSlowly() {
+  //   return new Promise<Hero[]>(resolve =>
+  //     setTimeout(() => resolve(HEROES), 1000) // 2 seconds
+  //   );
+  // }
 
   getHero(id: number) {
     return this.getHeroes()

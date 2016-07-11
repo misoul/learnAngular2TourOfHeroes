@@ -25,4 +25,8 @@ export class DashboardComponent implements OnInit {
     let link = ['/detail', hero.id];
     this.router.navigate(link);
   }
+
+  getTopHeroes() {
+    this.heroes; // TODO: incomplete
+  }
 }
